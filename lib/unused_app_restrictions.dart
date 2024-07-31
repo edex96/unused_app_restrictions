@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 import 'package:flutter/services.dart';
 
 class UnusedAppRestrictions {
@@ -6,8 +7,12 @@ class UnusedAppRestrictions {
       MethodChannel('unused_app_restrictions');
 
   static Future<bool> getStatus() async {
-    final String status =
-        await _channel.invokeMethod('getUnusedAppRestrictionsStatus');
-    return status == 'ENABLED';
+    if (Platform.isAndroid) {
+      final String status =
+          await _channel.invokeMethod('getUnusedAppRestrictionsStatus');
+      return status == 'ENABLED';
+    } else {
+      return false;
+    }
   }
 }
