@@ -1,4 +1,4 @@
-## 0.0.1
+## 0.0.3
 * Dependency updates
 ## 0.0.2
 * getStatus changed, platform check added
