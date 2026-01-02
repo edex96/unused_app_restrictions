@@ -1,21 +1,21 @@
 name: unused_app_restrictions
 description: "returns only 'Pause app activity if unused' status"
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/edex96/unused_app_restrictions
 
 environment:
-  sdk: '>=3.4.3 <4.0.0'
+  sdk: ^3.10.4
   flutter: '>=3.3.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  plugin_platform_interface: ^2.0.2
+  plugin_platform_interface: ^2.1.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  flutter_lints: ^6.0.0
 
 flutter:
   plugin:
