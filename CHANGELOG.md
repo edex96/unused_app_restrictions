@@ -1,4 +1,6 @@
+## 0.0.1
+* Dependency updates
 ## 0.0.2
-* Dependency Updates
+* getStatus changed, platform check added
 ## 0.0.1
 * Initial release

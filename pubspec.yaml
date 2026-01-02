@@ -1,6 +1,6 @@
 name: unused_app_restrictions
 description: "returns only 'Pause app activity if unused' status"
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/edex96/unused_app_restrictions
 
 environment:
